@@ -1,186 +1,145 @@
-
-html, body {margin: 0; height: 100%; overflow: hidden}
-
-
-nav {
-    position: relative;
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Fredoka', sans-serif;
+  }
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 36px 0;
     display: flex;
-    margin: 0px;
-    left: 50px;
-
-}
-
-nav > img {
-
-}
-
-.nav-items {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro-section {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    float: left;
-    font-size: 1.5em;
-    margin-left: 350px;
-
-}
-
-.nav-item {
+    flex-direction: row;
+  }
+  .nav-items {
     display: flex;
-    width: 120px;
-}
-
-.nav-item.active-item {
-    color: #fa5636;
-    font-weight: bold;
-}
-
-.nav-items + img {
-    position: relative;
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  .nav-items h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 0 32px;
+    font-weight: 300;
+  }
+  .nav-items h5.active-item {
+    font-weight: 600;
+    color: #fe5e35;
+  }
+  .left-section {
+    width: 60%;
+  }
+  .left-section h3 {
+    font-size: 36px;
+    padding: 20px 10px 20px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .left-section img[alt='circles'] {
+    width: 50px;
+  }
+  .left-section h1 {
+    font-size: 72px;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  .sub-headlines {
+    padding: 20px 50px;
+  }
+  .sub-headline {
     display: flex;
-    left: 160px;
-    float: left;
-    margin-right: 40px;
-    font-size: 1.5em;
-}
-
-.right-section {
-    position: relative;
-}
-
-.headphone-div {
-    position: relative;
-
-}
-
-.headphone-div > img {
-    position: relative;
-    margin-right: 50px;
-    z-index: 3;
-    left: 880px;
-    margin-top: -40px;
-    top: -250px;
-    width: 8%;
-}
-
-.discount-content + img {
-    position: relative;
-    top: -650px;
-    width: 30%;
-    left: 920px;
-    z-index: 1;
-}
-
-h3 {
-    font-size: 30px;
-    margin-left: 40px;
-}
-
-h3 > img {
-    width: 40px;
-}
-
-h3 + h1 {
-    font-size: 80px;
-    margin-left: 40px;
-}
-
-.sub-headlines {
-    position: relative;
-    display: block;
-    margin-left: 150px;
-    top: -50px;
-}
-
-.sub-headline > img {
-    position: relative;
-    top: 10px;
-    background-color: #fa5636;
-    width: 25px;
-    height: 25px;
-    left: -10px;
-    border-radius: 12.5px;
-}
-
-
-.text {
-    width: 600px;
-    margin-left: 40px;
-}
-
-.discount-content {
-    position: relative;
-    top: -350px;
-    left: 910px;
-    z-index: 4;
-    line-height: 5px;
-    color: #ffffff;
-    font-weight: bold;
-
-}
-
-.dots {
-    position: relative;
-    top: -650px;
-    left: 980px;
-    display: flex;
-    z-index: 1;
-    float: left;
-    
-}
-.dot {
-    display: inline;
-    font-size: 1.5em;
-    margin: 20px;
-    position: relative;
-    left: 35%;
-    top: -5px;
-
-}
-
-.dot.yellow-dot {
-    background-color: #f7fa36;
-    width: 25px;
-    height: 25px;
-    border-radius: 12.5px;
-}
-
-.dot.tomato-dot {
-    background-color: #fa5636;
-    width: 25px;
-    height: 25px;
-    border-radius: 12.5px;
-}
-
-.dot.black-dot {
-    background-color: #1d1d1d;
-    width: 25px;
-    height: 25px;
-    border-radius: 12.5px;
-}
-
-.dots + button {
-    position: relative;
-    top: -590px;
-    left: 870px;
-    display: flex;
-    z-index: 5;
-    float: left;
-}
-
-.action-btns {
-    position: relative;
-    display: inline;
-    top: 30px;
-    margin-left: 40px;
-}
-
-.action-btn {
-    position: relative;
-    top: 10px;
-    color: #ffffff;
-    background-color: #fa5636;
-    width: 220px;
-    height: 7vh;
-    align-items: center;  
-    font-size: 1.3em;
-    font-weight: bold;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub-headline img {
+    background-color: #fe5e35;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .text {
+    padding: 10px 100px 30px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .action-btns button,
+  .right-section button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fe5e35;
+    border: none;
+    font-size: 16px;
+    margin-right: 16px;
     border-radius: 25px;
-}
+  }
+  
+  .right-section {
+    width: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headphone-div {
+    position: relative;
+  }
+  .discount {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    height: 150px;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.2));
+  }
+  .discount-content {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-family: 'Fredoka One', sans-serif;
+    color: #fff;
+  }
+  .discount-content h4 {
+    margin-left: 24px;
+  }
+  .discount-content h1 {
+    font-size: 44px;
+  }
+  img[alt='headphone'] {
+    width: 80%;
+  }
+  .dots {
+    padding: 24px 0 32px 0;
+    display: flex;
+  }
+  .dots .dot {
+    margin: 0 16px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+  .yellow-dot {
+    background-color: #fbd104;
+  }
+  .tomato-dot {
+    background-color: #fe5e35;
+  }
+  .black-dot {
+    background-color: #000;
+  }
+  
